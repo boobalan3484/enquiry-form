@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enquiry Form | Edureka Learning Centre</title>
+
+    <link rel="icon" href="./Images/edureka.jpg" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+</head>
+
+<body>
+
+    <div class="auth-background" id="main-content">
+
+        <div class="container is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
+
+            <div class="card">
+
+                <!-- Flip-Card Front -->
+
+                <div class="form-box front">
+
+                    <div class="card-content">
+
+                        <form action="#">
+
+                            <div class="columns">
+
+                                <div
+                                    class="logo-container column is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+                                    <img src="./Images/OIP.jpeg" class="logo my-3" />
+                                    <div class="is-hidden-mobile">
+                                        <div class="greeting my-5"> Welcome to Edureka Learning Center</div>
+                                        <hr>
+                                        <div class="subGreet my-5"> Kindly fill the Enquiry Form</div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="content-container column is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+
+                                    <div class="columns m-0 mt-3 field control">
+
+                                        <div class="column is-half m-0 py-1 field">
+                                            <div class="control">
+                                                <div class="input-group ">
+                                                    <input type="text" id="dateInput" required readonly>
+                                                    <label for="" style="top: 0; font-size: 12px;">Date</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="column is-half m-0 py-1 field">
+                                            <div class="control">
+                                                <div class="input-group ">
+                                                    <input type="text" id="centreName" required readonly>
+                                                    <label for="" style="top: 0; font-size: 12px;">Centre name </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="column m-0 py-1 is-full field">
+                                        <div class="control">
+                                            <div class="input-group">
+                                                <input type="text" id="fnameInput" required
+                                                    pattern="^[A-Z][A-Za-z\s]{2,}$"
+                                                    title="First character must be uppercase, minimum 3 characters">
+                                                <label for="">First name</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column m-0 py-1 is-full field">
+                                        <div class="control">
+                                            <div class="input-group">
+                                                <input type="text" id="lnameInput" required
+                                                    pattern="^[A-Z][A-Za-z]{0,}$"
+                                                    title="First character must be uppercase">
+                                                <label for="">Last name</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column m-0 py-1 is-full  field">
+                                        <div class="control">
+                                            <div class="input-group">
+                                                <input type="email" id="mailInput" required pattern="[a-z0-9].*"
+                                                    title="First character must be lowercase">
+                                                <label for="">E-mail address</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column m-0 py-1 is-full field">
+                                        <div class="control">
+                                            <div class="input-group">
+                                                <input type="tel" input="mobileInput" required
+                                                    pattern="[6-9]{1}[0-9]{9}" title="Mobile number must be 10 digits">
+                                                <label for="">Mobile number</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="column m-0 py-1 is-full field">
+                                        <div class="control">
+                                            <div class="input-group">
+                                                <input type="date" required id="dobInput">
+                                                <label for="">Date of Birth</label>
+                                            </div>
+                                        </div>
+                                    </div>  -->
+
+                                    <div class="column m-0 py-1 is-full field">
+                                        <div class="control">
+                                            <div class="input-group">
+                                                <input type="text" id="degreeInput" required
+                                                    pattern="^[A-Z][.A-Za-z]{2,}$"
+                                                    title="First character must be uppercase">
+                                                <label for="">Qualification</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column m-0 py-1 is-full field">
+                                        <div class="control">
+                                            <div class="input-group">
+                                                <input type="text" id="branchInput" required
+                                                    pattern="^[A-Z][A-Za-z\s]{2,}$"
+                                                    title="First character must be uppercase, may use whitespace, minimum 3 characters">
+                                                <label for="">Branch</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column m-0 py-1 is-full field">
+                                        <div class="control">
+                                            <div class="input-group">
+                                                <input type="text" id="institutionInput" required
+                                                    pattern="^[A-Z][A-Za-z\s.,]{2,}(?!.*[.,])$"
+                                                    title="First character must be uppercase, may use whitespace and punctuation characters , minimum 3 characters">
+                                                <label for="">Institution</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column m-0 py-1 is-full field">
+                                        <div class="control">
+                                            <div class="input-group">
+                                                <select id="yearInput" required>
+                                                    <option value="" disabled selected> </option>
+                                                </select>
+                                                <label for="">Year of passing</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column m-0 py-1 is-full field ">
+                                        <div class="control is-flex is-justify-content-center my-1">
+                                            <input type="checkbox" id="workCheckbox">
+                                            <label class="ml-4" for="">
+                                                Working professional
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div id="workFields" style="display: none;" class="column p-0 m-0 py-1 is-full">
+
+                                        <div class="column m-0 py-1  is-full field">
+                                            <div class="control">
+                                                <div class="input-group">
+                                                    <input type="text" id="companyInput" required
+                                                        pattern="^[A-Z][A-Za-z]{1,}$"
+                                                        title="First character must be uppercase, minimum 3 characters">
+                                                    <label for="">Company name</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="column m-0 py-1 is-full field">
+                                            <div class="control">
+                                                <div class="input-group">
+                                                    <input type="text" id="roleInput" required
+                                                        pattern="^[A-Z][A-Za-z]{1,}$"
+                                                        title="First character must be uppercase, minimum 3 characters">
+                                                    <label for="">Job role</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="column m-0 py-1 is-full field">
+                                            <div class="control">
+                                                <div class="input-group">
+                                                    <select id="experienceInput" required>
+                                                        <option value="" disabled selected> </option>
+                                                    </select>
+                                                    <label for="">Experience</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- <div class="field is-grouped">
+                                        <div class="control">
+                                            <button class="button custom-font"
+                                                style="background: linear-gradient(to bottom right,#a364fb,#00ffff); border:transparent"
+                                                onclick="createUserAccount()"> Next &nbsp;
+                                                <i class="fa-solid fa-caret-right fa-fade"></i>
+                                            </button>
+                                        </div>
+                                    </div> -->
+
+                                    <div class="column m-0 py-1 is-full field">
+                                        <div class="control">
+                                            <div class="input-group">
+                                                <input type="text" required id="addressInput">
+                                                <label for="">Address</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column m-0 py-1 is-full field">
+
+                                        <div class="control is-flex is-justify-content-between">
+
+                                            <div class="input-group ">
+                                                <input type="text" id="cityInput" list="cityName" required
+                                                    onchange="showFields()">
+                                                <datalist id="cityName">
+                                                    <option value="">Select a city</option>
+                                                    <option value="Chennai">Chennai</option>
+                                                    <option value="Coimbatore">Coimbatore</option>
+                                                    <option value="Erode">Erode</option>
+                                                    <option value="Karur">Karur</option>
+                                                    <option value="Madurai">Madurai</option>
+                                                    <option value="Namakkal">Namakkal</option>
+                                                    <option value="Salem">Salem</option>
+                                                    <option value="Tiruchy">Tiruchy</option>
+                                                    <option value="Tirupur">Tirupur</option>
+                                                </datalist>
+                                                <label for="">City</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="column m-0 py-1 is-full field">
+
+                                        <div class="control is-flex is-justify-content-between">
+
+                                            <div class="input-group " id="areaField" style="display: none;">
+                                                <input type="text" id="areaInput" required>
+                                                <label for="">Area</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="column m-0 px-0 py-0 is-full is-flex ">
+                                        <div class="control column is-half is-one-thirds-mobile m-0">
+                                            <div class="input-group m-0 ">
+                                                <input type="text" id="stateInput" required />
+                                                <label for="">State</label>
+                                            </div>
+                                        </div>
+                                        <div class="control column is-half m-0 is-one-thirds-mobile">
+                                            <div class="input-group  m-0">
+                                                <input type="number" id="pinInput" required />
+                                                <label for="">Pin Code</label>
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+                                    <div class="column m-0 py-1 is-full field">
+                                        <div class="control">
+                                            <div class="input-group">
+                                                <input type="text" required id="stateInput">
+                                                <label for="">State</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column m-0 py-1 is-full field">
+                                        <div class="control">
+                                            <div class="input-group">
+                                                <input type="number" required id="pinInput">
+                                                <label for="">Pin Code</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column m-0 py-1 p-0-mobile is-full field">
+                                        <div class="control">
+                                            <div class="input-group">
+                                                <select class="combo px-0" required>
+                                                    <option value="" disabled selected> </option>
+                                                    <option value="fswd">Full Stack Web Development</option>
+                                                    <option value="dev">Cloud & DevOps</option>
+                                                    <option value="ds">Data Science</option>
+                                                </select>
+                                                <label for="combo">Area of Interest</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div style=" font-size: 14px; text-align:justify;"
+                                        class="my-4 column m-0 py-1 is-three-fifths " id="aboutCentre">
+                                        <label for="courseOption">How did you get to know about Edureka?</label>
+
+
+                                        <div id="radioContainer" style=" font-size: 14px; display:none;" class="mt-3 ">
+
+                                            <div class="is-flex is-flex-wrap-wrap is-justify-content-space-between ">
+
+                                                <div class="rcon1">
+                                                    <div class="radioOptions">
+                                                        <input type="radio" name="courseOption" value="From a Friend">
+                                                        &nbsp;
+                                                        <label>From a Friend</label>
+                                                    </div>
+
+                                                    <div class="radioOptions">
+                                                        <input type="radio" name="courseOption" value="Paper Inserts">
+                                                        &nbsp;
+                                                        <label>Paper Inserts</label>
+                                                    </div>
+
+
+                                                    <div class="radioOptions">
+                                                        <input type="radio" name="courseOption" value="TV Ads">
+                                                        &nbsp;
+                                                        <label>TV Ads</label>
+                                                    </div>
+
+                                                    <div class="radioOptions">
+                                                        <input type="radio" name="courseOption" value="Hoardings">
+                                                        &nbsp;
+                                                        <label>Hoardings</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="rcon2">
+
+                                                    <div class="radioOptions">
+                                                        <input type="radio" name="courseOption" value="Online Ads">
+                                                        &nbsp;
+                                                        <label>Online Ads</label>
+                                                    </div>
+
+                                                    <div class="radioOptions">
+                                                        <input type="radio" name="courseOption" value="Paper Ads">
+                                                        &nbsp;
+                                                        <label>Paper Ads</label>
+                                                    </div>
+
+                                                    <div class="radioOptions">
+                                                        <input type="radio" name="courseOption" value="Social media">
+                                                        &nbsp;
+                                                        <label>Social media</label>
+                                                    </div>
+
+                                                    <div class="radioOptions">
+                                                        <input type="radio" name="courseOption" value="Other">
+                                                        &nbsp;
+                                                        <label>Other</label>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="column m-0 py-1 is-full field">
+                                        <div class="control">
+                                            <div class="input-group" id="specifyField" style="display: none;">
+                                                <input type="text" required id="specifyInput">
+                                                <label for="">Please Specify</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="field">
+                                        <div class="control is-flex my-4">
+                                            <input type="checkbox" id="agreeCheckbox">
+                                            <label class="checkbox custom-font is-size-7 ml-2" for="agreeCheckbox">
+                                                I agree to the <a href="#" class="custom-font">terms and
+                                                    conditions</a>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="field is-grouped">
+                                        <div class="control">
+                                            <button class="button is-link custom-font" style="background-color: #a364fb"
+                                                onclick="createUserAccount()">Submit</button>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+                <!--  -->
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div id="splash-screen">
+        <div id="logoTxt">e!</div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="./script.js"> </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const inputFields = document.querySelectorAll(".input-group input, .input-group select");
+
+            inputFields.forEach((input) => {
+                input.addEventListener("input", function () {
+                    validateInput(input);
+                });
+            });
+
+            function validateInput(input) {
+                const label = input.nextElementSibling;
+                if (input.checkValidity() && checkCustomValidity(input)) {
+                    label.style.color = "#4CAF50"; // Green color for valid input
+                    input.style.borderColor = "#4CAF50";
+                    input.style.boxShadow = "0 0 5px rgba(76, 175, 80, 0.4)";
+                } else {
+                    label.style.color = "#F44336"; // Red color for invalid input
+                    input.style.borderColor = "#F44336";
+                    input.style.boxShadow = "0 0 5px rgba(244, 67, 54, 0.4)";
+                }
+            }
+
+            function checkCustomValidity(input) {
+                //   if (input.id === "fnameInput") {
+                //   return input.value.length >= 3;
+                //   }
+
+                // Add more custom validation rules for other fields if needed
+                return true;
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const yearInput = document.getElementById("yearInput");
+            const currentYear = new Date().getFullYear();
+
+            for (let year = 2013; year <= currentYear; year++) {
+                const option = document.createElement("option");
+                option.value = year;
+                option.textContent = year;
+                yearInput.appendChild(option);
+            }
+
+            const experienceInput = document.getElementById("experienceInput");
+
+            const experienceOptions = [
+                { value: "below1", label: "less than 1 year" },
+                { value: "1", label: "1 year" },
+                { value: "2", label: "2 years" },
+                { value: "3", label: "3 years" },
+                { value: "4", label: "4 years" },
+                { value: "5", label: "5 years" },
+                { value: "above5", label: "above 5 years" }
+            ];
+
+            experienceOptions.forEach(option => {
+                const optionElement = document.createElement("option");
+                optionElement.value = option.value;
+                optionElement.textContent = option.label;
+                experienceInput.appendChild(optionElement);
+            });
+        });
+
+    </script>
+
+
+
+
+</body>
+
+
+</html>
